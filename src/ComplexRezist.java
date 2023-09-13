@@ -28,10 +28,4 @@ public class ComplexRezist extends ComplexNumber { // класс потомок 
         System.out.print("Модуль проводимости: " + modProvod + "\n" +
                 "Аргумент комплексной проводимости: " + argComlecsY);
     }
-
-
-
-
-
-
 }
