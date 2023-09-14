@@ -3,23 +3,21 @@ import java.awt.event.*;
 
 public class qwerty extends JDialog {
     private JPanel contentPane;
-    private JTextField JtextMnimoeB1;
-    private JTextField JtextRealA1;
-    private JTextField JtextFieldResultMultiplication;
-    private JTextField JtextFieldModProvod;
-    private JTextField textField6;
-    private JTextField JtextFieldUserNumb;
-    private JButton JbutttonRaschet;
-    private JButton JbutttonRezet;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JTextField JtextReal;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JTextField textField5;
+    private JTextField textField6;
 
     public qwerty() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-        buttonOK.addActionListener(new ActionListener() {
 
+        buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
             }
@@ -45,7 +43,6 @@ public class qwerty extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
-
     }
 
     private void onOK() {
