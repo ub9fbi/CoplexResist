@@ -1,33 +1,24 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class qwerty extends JDialog {
+public class Panel extends JDialog {
     private JPanel contentPane;
+    private JTextField JtextRealA1;
+    private JTextField Jtext1MnimoeB1;
+    private JTextField JtextFieldUserNumb;
+    private JTextArea textArgComlecsY;
+    private JTextArea textModProvod;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextField JtextReal;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JTextField textField5;
-    private JTextField textField6;
 
-    public qwerty() {
+    public Panel() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onOK();
-            }
-        });
 
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
+
+
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -56,9 +47,10 @@ public class qwerty extends JDialog {
     }
 
     public static void main(String[] args) {
-        qwerty dialog = new qwerty();
+        Panel dialog = new Panel();
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);
     }
+
 }

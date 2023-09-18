@@ -15,8 +15,7 @@ public class ComplexRezist extends ComplexNumber { // класс потомок 
                        индуктивность(мнимая часть коплексного числа),
                        угловая частота */
     public void weComplexResist() {
-        double resistZ = resistorResistance + (valueInductance * angylarFreq);
-        System.out.println("Комплексное сопротивление: " + resistZ);
+        String resistZ = String.valueOf(resistorResistance + (valueInductance * angylarFreq));
     }
     /* Метод weModAndArg расчитывает модуль комплексной проводимости и аргумент
     * Аргументы: сопротивление резистора(целая часть комплексного числа),
@@ -24,10 +23,8 @@ public class ComplexRezist extends ComplexNumber { // класс потомок 
                угловая частота*/
     public void weModAndArg() {
         double wL = angylarFreq * valueInductance;
-        double modProvod = 1 / Math.sqrt(Math.pow(resistorResistance,2) + Math.pow(wL,2)); // модуль проводимости
+        String modProvod = String.valueOf(1 / Math.sqrt(Math.pow(resistorResistance,2) + Math.pow(wL,2))); // модуль проводимости
         // double Y = angylarFreq * valueInductance/resistorResistance;
-        double argComlecsY = Math.atan(angylarFreq * valueInductance/resistorResistance) ; // аргумент комплексной проводимости
-        System.out.println("Модуль проводимости: " + modProvod + "\n" +
-                "Аргумент комплексной проводимости: " + argComlecsY);
+        String argComlecsY = String.valueOf(Math.atan(angylarFreq * valueInductance/resistorResistance)); // аргумент комплексной проводимости
     }
 }
