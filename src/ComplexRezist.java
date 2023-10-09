@@ -3,9 +3,16 @@ public class ComplexRezist extends ComplexNumber { // класс потомок 
     public double modProvod; // модуль проводимости
     public double argComlecsY; // аргумент комплексной проводимости
 
+    public ComplexRezist(double resistZ, double modProvod, double argComlecsY) {
+        super();
+        this.resistZ = resistZ;
+        this.modProvod = modProvod;
+        this.argComlecsY = argComlecsY;
+    }
+
     /* метод weComplexResist расчитывает комплексное сопротивление.
-    Аргументы: сопротивление резистора(целая часть комплексного числа),
-    индуктивность(мнимая часть коплексного числа), угловая частота */
+        Аргументы: сопротивление резистора(целая часть комплексного числа),
+        индуктивность(мнимая часть коплексного числа), угловая частота */
     public void weComplexResist() {
         resistZ  = realA1 + (mnimoeB1 * userNumb);
     }

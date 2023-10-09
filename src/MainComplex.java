@@ -9,6 +9,9 @@ public class MainComplex extends JDialog {
     private JTextArea textArea1;
     private JTextArea textArea2;
     private JButton button1;
+    private JLabel JtextReal1;
+    private JLabel JtextMnimoeB1;
+    private JLabel JtextFieldUserNumb;
 
     public MainComplex() {
         setContentPane(contentPane);
