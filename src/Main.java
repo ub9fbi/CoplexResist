@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    static ArrayList<Figur> petList = new ArrayList<Figur>();
+    static ArrayList<Figur> figurList = new ArrayList<Figur>();
     public static void main(String[] args) {
         int k=0;
         Scanner sc = new Scanner(System.in);
@@ -11,9 +11,9 @@ public class Main {
             System.out.println("Введите: 1 - создать кошку, 2 - создать собаку, 3-выйти");
             k = sc.nextInt();
             if (k==1){
-                petList.add(new Circl());
-            } else  if (k==2){
-                petList.add(new Rectangle());
+                figurList.add(new Circl());
+            } else if (k==2){
+                figurList.add(new Rectangle());
             }
         }
     }
