@@ -3,18 +3,24 @@ import java.util.Scanner;
 
 public class Main {
     static ArrayList<Figur> figurList = new ArrayList<Figur>();
-    public static void main(String[] args) {
-        int k=0;
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args)
+    {
+        Circl circl = new Circl();
+        Rectangle rectangle = new Rectangle();
 
-        while (k<3) {
-            System.out.println("Введите: 1 - создать кошку, 2 - создать собаку, 3-выйти");
-            k = sc.nextInt();
-            if (k==1){
-                figurList.add(new Circl());
-            } else if (k==2){
-                figurList.add(new Rectangle());
-            }
+        int k = 0;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Выберите фигуру; 1 - круг, 2 - прямоугольник");
+        if (k == 1) {
+            circl.inputNumbers();
+            System.out.println("Площадь круга");
+        } else if (k == 2) {
+            rectangle.inputNumbers();
+            System.out.println("Площадь прямоугольника");
         }
+
+
     }
 }
